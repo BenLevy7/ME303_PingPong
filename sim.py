@@ -36,7 +36,7 @@ print(paddle_norm_y)
 result_angle_x = -(2*(direction_x*paddle_norm_x + direction_y*paddle_norm_y)*paddle_norm_x - direction_x)
 result_angle_y = -(2*(direction_x*paddle_norm_x + direction_y*paddle_norm_y)*paddle_norm_y - direction_y)
 print(result_angle_x)
-print(result_angle_y)
+
 for i in range(1, 1000):
 
     position_x[i] = round(position_x[i-1]+increment*direction_x, 5)
