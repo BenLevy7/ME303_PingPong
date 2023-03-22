@@ -27,7 +27,7 @@ increment = 0.01
 
 # Angled paddle
 execute = True
-angle = 0
+angle = 0.1
 
 paddle_norm_x = round(np.cos(angle),2)
 paddle_norm_y = round(np.sin(angle),2)
