@@ -7,7 +7,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # want to iterate through position until wall is hit
-paddle_dist = 1
+paddle_dist = 2
 position_x = []
 position_y = []
 direction_x = 1
