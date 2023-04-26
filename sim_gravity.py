@@ -18,9 +18,9 @@ velocity_y = []
 
 time = []
 
-position_x = [0]*5000
-position_y = [0]*5000
-velocity_y = [0]*5000
+position_x = [0]*8000
+position_y = [0]*8000
+velocity_y = [0]*8000
 position_x[0] = 0.5
 
 
@@ -38,10 +38,11 @@ paddle_norm_x = -round(np.cos(45),2)
 paddle_norm_y = round(np.sin(45),2)
 
 
-
+result_angle_x = -(2*(velocity_x*paddle_norm_x + direction_y*paddle_norm_y)*paddle_norm_x - direction_x)
+result_angle_y = (2*(direction_x*paddle_norm_x + direction_y*paddle_norm_y)*paddle_norm_y - direction_y)
 dt = 0.01
 
-for i in range(1, 2000):
+for i in range(1, 8000):
      position_y[i] = position_y[i-1] + velocity_y[i-1]*dt
      position_x[i] = position_x[i-1] + velocity_x*dt
    
